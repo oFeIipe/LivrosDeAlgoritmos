@@ -65,7 +65,6 @@ def quick_sort_in_place(array, begin, end):
         quick_sort_in_place(array, begin, pivot - 1)
         quick_sort_in_place(array, pivot + 1, end)
 
-
 def partition(array, begin, end):
 
     pivot = array[end]
