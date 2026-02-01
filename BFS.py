@@ -17,7 +17,6 @@ def bfs(nome):
     ja_verificadas = []
     while fila_de_pesquisa:
         pessoa = fila_de_pesquisa.popleft()
-        print(pessoa)
         if not pessoa in ja_verificadas:
             if pessoa_e_vendendor(pessoa):
                 return
@@ -35,7 +34,6 @@ def dfs(nome):
     while stack:
         pessoa = stack.pop()
         if not pessoa in ja_verificadas:
-            print(pessoa)
             if pessoa_e_vendendor(pessoa):
                 return
 
