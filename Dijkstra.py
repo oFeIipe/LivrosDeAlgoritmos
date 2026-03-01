@@ -34,7 +34,6 @@ def dijkstra():
         custo = custos[node]
         vizinhos = grafo[node]
         for n in vizinhos.keys():
-            print(n)
             novo_custo = custo + vizinhos[n]
             if novo_custo < custos[n]:
                 custos[n] = novo_custo
